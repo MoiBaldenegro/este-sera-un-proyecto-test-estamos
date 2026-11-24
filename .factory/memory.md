@@ -8,3 +8,4 @@ Agrega entradas cortas y fechadas; no borres las de otros salvo que ya no sean c
 - 2026-11-24: Issue #9 (CI rojo Pages): causa = Pages sin habilitar (Source: GitHub Actions); no es arreglable desde código. Requiere acción humana.
 - 2026-11-24: CSS en site/css/styles.css (mobile-first, breakpoint 768px, colores con contraste AA vía variables :root).
 - 2026-11-24: #8: URL pública da 404 (Pages sin habilitar); meta description añadida; Lighthouse pendiente hasta que Pages funcione.
+- 2026-11-24: #9: añadido enablement:true en configure-pages (best effort). Si falla, humano debe hacer repo público y Pages Source=GitHub Actions; no puedo hacerlo (gh bloqueado).
