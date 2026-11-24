@@ -9,3 +9,9 @@
 7. [p2] Auditoría de accesibilidad/SEO (meta description, contraste, Lighthouse ≥ 90).
 
 Hecho: visión (#1), arquitectura y backlog (#2).
+
+## Verificación de despliegue y SEO (#8) — 2026-11-24
+
+- Meta description añadida en `site/index.html` (con test).
+- `curl -I https://moibaldenegro.github.io/este-sera-un-proyecto-test-estamos/` → **404** (Pages no está habilitado con fuente GitHub Actions; ver #9). Requiere una persona: Settings → Pages → Source: GitHub Actions, y re-ejecutar el workflow.
+- Lighthouse accesibilidad/SEO: **pendiente**, no medible hasta que la URL pública responda 200. Puntajes por documentar aquí tras el despliegue.

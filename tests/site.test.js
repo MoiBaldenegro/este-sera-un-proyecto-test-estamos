@@ -44,3 +44,9 @@ test('enlaza la hoja de estilos con ruta relativa y el archivo existe', () => {
   assert.ok(fs.existsSync(css));
   assert.ok(fs.statSync(css).size > 0);
 });
+
+test('tiene meta description de 50 a 160 caracteres', () => {
+  const m = html.match(/<meta[^>]*name=["']description["'][^>]*content=["']([^"']*)["']/i);
+  assert.ok(m, 'falta meta description');
+  assert.ok(m[1].length >= 50 && m[1].length <= 160, `longitud ${m[1].length}`);
+});

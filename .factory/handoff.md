@@ -1,5 +1,5 @@
 # Handoff
 
-- Hecho (#7): README.md con enlace al sitio, edición de site/, correr local, `npm test` y despliegue. Suite en verde.
-- Pendiente: #9 requiere habilitar Pages (Source: GitHub Actions) por un humano.
-- Siguiente paso: #8 verificación de despliegue público y accesibilidad/SEO.
+- Hecho (#8): meta description + test; docs/backlog.md documenta que la URL pública da 404 (Pages sin habilitar, ver #9).
+- Pendiente (humano): habilitar Pages con fuente GitHub Actions y re-ejecutar el workflow.
+- Siguiente paso: con la URL en 200, correr Lighthouse y anotar puntajes (>=90) en docs/backlog.md.
