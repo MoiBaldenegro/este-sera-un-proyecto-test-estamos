@@ -1,5 +1,5 @@
 # Handoff
 
-- Hecho (#9): enablement:true en configure-pages del workflow; tests 7/7.
-- Pendiente (humano): hacer repo público y Settings > Pages > Source = GitHub Actions si el workflow sigue rojo; re-ejecutar.
-- Siguiente: con la URL en 200, correr Lighthouse (#8) y anotar puntajes en docs/backlog.md.
+- #10: sin cambios de código; el fallo del workflow Pages es de configuración del repo (Pages no habilitado). Tests 9/9.
+- Pendiente (humano): Settings > Pages > Source = GitHub Actions; re-ejecutar workflow; si falla, aportar el log.
+- Siguiente: con la URL en 200, correr Lighthouse (#8).
