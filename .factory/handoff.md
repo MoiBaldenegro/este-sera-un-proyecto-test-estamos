@@ -1,6 +1,5 @@
 # Handoff
 
-Estado en que quedó la última corrida y qué sigue. Cada corrida lo reescribe al terminar.
-
-- Estado: proyecto recién creado, sin trabajo previo.
-- Siguiente paso: lo que pida la primera tarea.
+- Hecho: issue #1 (descubrimiento). Se escribió docs/vision.md (web estática en español, GitHub Pages vía Actions).
+- Estado: visión completa, sin preguntas pendientes; no hay código.
+- Siguiente paso: issue para el planner (arquitectura mínima y backlog: página, workflow de Pages, README).
