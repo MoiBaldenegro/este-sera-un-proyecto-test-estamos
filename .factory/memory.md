@@ -10,3 +10,4 @@ Agrega entradas cortas y fechadas; no borres las de otros salvo que ya no sean c
 - 2026-11-24: #8: URL pública da 404 (Pages sin habilitar); meta description añadida; Lighthouse pendiente hasta que Pages funcione.
 - 2026-11-24: #9: añadido enablement:true en configure-pages (best effort). Si falla, humano debe hacer repo público y Pages Source=GitHub Actions; no puedo hacerlo (gh bloqueado).
 - 2026-11-24: Issue #10 (mismo CI rojo Pages): sin log; tests 9/9 OK; sigue requiriendo que un humano habilite Pages (Source=GitHub Actions). No se cambió código.
+- 2026-11-24: #8 retomado: humano pidió que el agente haga público el repo, pero gh/API bloqueados; URL sigue 404. Requiere acción humana (repo público + Pages Source=Actions).
