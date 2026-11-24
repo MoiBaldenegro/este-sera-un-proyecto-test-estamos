@@ -1,5 +1,5 @@
 # Handoff
 
-- Hecho: issue #1 (descubrimiento). Se escribió docs/vision.md (web estática en español, GitHub Pages vía Actions).
-- Estado: visión completa, sin preguntas pendientes; no hay código.
-- Siguiente paso: issue para el planner (arquitectura mínima y backlog: página, workflow de Pages, README).
+- Hecho: issue #2 (planificación). Escritos docs/architecture.md y docs/backlog.md; propuestos 6 issues constructor.
+- Estado: sin código aún.
+- Siguiente paso: constructor toma el esqueleto ejecutable con tests (backlog #1), luego contenido, CSS, workflow, README, verificación de URL.
