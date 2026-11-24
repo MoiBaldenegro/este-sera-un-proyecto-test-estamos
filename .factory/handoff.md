@@ -1,4 +1,5 @@
 # Handoff
 
-- Hecho: diagnóstico del issue #9. Código/tests OK; el run falla porque Pages no está habilitado con fuente "GitHub Actions". Resultado needs-human.
-- Siguiente paso: persona habilita Pages y re-ejecuta el workflow; luego #6 CSS, #7 README, #8 verificación.
+- Hecho (#6): site/css/styles.css enlazado en site/index.html (css/styles.css); test añadido en tests/site.test.js. Suite en verde.
+- Pendiente: revisión visual a 320px y 1280px por una persona; #9 requiere habilitar Pages (humano).
+- Siguiente paso: #7 README, #8 verificación de despliegue/accesibilidad.

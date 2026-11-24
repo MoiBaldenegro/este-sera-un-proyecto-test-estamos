@@ -35,3 +35,12 @@ test('footer enlaza al repositorio', () => {
   const footer = html.match(/<footer[\s\S]*<\/footer>/i)[0];
   assert.match(footer, /href=["']https:\/\/github\.com\/MoiBaldenegro\/este-sera-un-proyecto-test-estamos["']/);
 });
+
+test('enlaza la hoja de estilos con ruta relativa y el archivo existe', () => {
+  const m = html.match(/<link[^>]*rel=["']stylesheet["'][^>]*href=["']([^"']+)["']/i);
+  assert.ok(m, 'falta <link rel="stylesheet">');
+  assert.doesNotMatch(m[1], /^(\/|[a-z]+:)/i, 'la ruta debe ser relativa');
+  const css = path.join(__dirname, '..', 'site', m[1]);
+  assert.ok(fs.existsSync(css));
+  assert.ok(fs.statSync(css).size > 0);
+});
