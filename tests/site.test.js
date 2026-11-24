@@ -16,3 +16,22 @@ test('tiene meta viewport', () => {
 test('tiene title no vacío', () => {
   assert.match(html, /<title>\s*\S[^<]*<\/title>/i);
 });
+
+test('tiene landmarks header, main y footer', () => {
+  for (const tag of ['header', 'main', 'footer']) {
+    assert.match(html, new RegExp(`<${tag}[\s>]`, 'i'));
+  }
+});
+
+test('tiene las tres secciones requeridas', () => {
+  const sections = html.match(/<section[\s>]/gi) || [];
+  assert.ok(sections.length >= 3);
+  for (const h of ['El proyecto', 'La factory', 'Cómo se probó']) {
+    assert.match(html, new RegExp(`<h2[^>]*>\s*${h}\s*</h2>`));
+  }
+});
+
+test('footer enlaza al repositorio', () => {
+  const footer = html.match(/<footer[\s\S]*<\/footer>/i)[0];
+  assert.match(footer, /href=["']https:\/\/github\.com\/MoiBaldenegro\/este-sera-un-proyecto-test-estamos["']/);
+});
